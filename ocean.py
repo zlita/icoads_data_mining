@@ -5,10 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 import folium
 
-
-
-
-data = pd.read_csv(r"resultat_total_2005.csv", chunksize=50000)
+data = pd.read_csv("resultat_total_2005.csv", chunksize=50000)
 temp = []
 
 for chunk in data:
